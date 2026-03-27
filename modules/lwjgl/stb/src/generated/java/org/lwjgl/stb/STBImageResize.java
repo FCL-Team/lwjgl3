@@ -441,8 +441,11 @@ public class STBImageResize {
     };
 
 
-    // ==============================
-    // ==============================
+    /* 
+    * ==============================
+    * 旧API  来自 https://github.com/aaaapai/lwjgl3/blob/main/modules/lwjgl/stb/src/generated/java/org/lwjgl/stb/STBImageResize.java
+    * ==============================
+    */
 
     /** Set this flag if you have no alpha channel, or otherwise provide the index of the alpha channel. */
     public static final int STBIR_ALPHA_CHANNEL_NONE = -1;

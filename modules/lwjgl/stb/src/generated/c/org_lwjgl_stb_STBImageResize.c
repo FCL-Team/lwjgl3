@@ -163,10 +163,12 @@ JNIEXPORT jint JNICALL Java_org_lwjgl_stb_STBImageResize_nstbir_1resize_1extende
     return (jint)stbir_resize_extended_split(resize, split_start, split_count);
 }
 
-// 来自 https://github.com/aaaapai/lwjgl3/blob/main/modules/lwjgl/stb/src/generated/c/org_lwjgl_stb_STBImageResize.c
-// ==============================
-// 兼容层函数实现（保持旧API）
-// ==============================
+/* 
+* ==============================
+* 兼容层函数实现（保持旧API）
+* 来自 https://github.com/aaaapai/lwjgl3/blob/main/modules/lwjgl/stb/src/generated/c/org_lwjgl_stb_STBImageResize.c
+* ==============================
+*/
 
 JNIEXPORT jint JNICALL Java_org_lwjgl_stb_STBImageResize_nstbir_1resize_1uint8(JNIEnv *__env, jclass clazz, 
     jlong input_pixelsAddress, jint input_w, jint input_h, jint input_stride_in_bytes,
